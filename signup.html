@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up - Travel With Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-overlay"></div>
+    <nav class="navbar">
+        <div class="logo">Travel With Us</div>
+        <ul class="nav-links"><li><a href="index.html">Home</a></li></ul>
+    </nav>
+    <div class="container" style="max-width: 450px;">
+        <h2>Create an Account</h2>
+        <form onsubmit="handleSignup(event)" style="display:flex; flex-direction:column; gap:20px; margin-top:20px;">
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" id="name" placeholder="John Doe" required>
+            </div>
+            <div class="input-group">
+                <label>Email Address</label>    
+                <input type="email" id="email" placeholder="email@example.com" required>
+            </div>
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" id="password" placeholder="Minimum 6 characters" required minlength="6">
+            </div>
+            <button type="submit" class="btn">Register</button>
+        </form>
+        <p style="margin-top:25px; text-align:center;">Already have an account? <a href="login.html" style="color:var(--secondary-teal); font-weight:bold;">Login here</a></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

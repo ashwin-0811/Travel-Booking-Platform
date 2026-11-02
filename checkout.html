@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Secure Checkout - Travel With Us</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .payment-methods { display: flex; flex-direction: column; gap: 15px; }
+        .pay-method-label {
+            border: 2px solid #ccc; padding: 15px 20px; border-radius: 8px; 
+            cursor: pointer; display: flex; align-items: center; gap: 15px; 
+            transition: 0.3s ease; background: white; font-size: 16px;
+        }
+        .pay-method-label:hover { border-color: var(--accent-cyan); box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .pay-method-label input[type="radio"] { transform: scale(1.3); accent-color: var(--secondary-teal); cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="bg-overlay"></div>
+    <nav class="navbar">
+        <div class="logo">Travel With Us</div>
+        <ul class="nav-links"><li><a href="index.html">Cancel & Return</a></li></ul>
+    </nav>
+    <div class="container" style="max-width: 550px;">
+        <h2>Select Payment Method</h2>
+        <p style="color: #666; margin-bottom: 25px;">Choose how you would like to pay to finalize your booking.</p>
+        
+        <form onsubmit="processPayment(event)" style="display:flex; flex-direction:column; gap:20px;">
+            <div class="payment-methods">
+                <label class="pay-method-label" onclick="highlight(this)">
+                    <input type="radio" name="payment" value="card" required>
+                    <strong>💳 Credit / Debit Card</strong>
+                </label>
+                <label class="pay-method-label" onclick="highlight(this)">
+                    <input type="radio" name="payment" value="upi" required>
+                    <strong>📱 UPI (GPay, PhonePe, Paytm)</strong>
+                </label>
+                <label class="pay-method-label" onclick="highlight(this)">
+                    <input type="radio" name="payment" value="netbanking" required>
+                    <strong>🏦 Net Banking</strong>
+                </label>
+            </div>
+            
+            <button type="submit" class="btn" style="font-size: 18px; padding: 15px; margin-top: 10px;">Proceed</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        function highlight(selectedLabel) {
+            document.querySelectorAll('.pay-method-label').forEach(label => {
+                label.style.borderColor = '#ccc';
+                label.style.background = 'white';
+            });
+            selectedLabel.style.borderColor = 'var(--secondary-teal)';
+            selectedLabel.style.background = 'var(--light-bg)';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+{
+    "flights": [
+        {
+            "name": "AeroBlue Airlines",
+            "price": 4500,
+            "image": "flight1.jpg"
+        },
+        {
+            "name": "SkyTeal Airways",
+            "price": 3800,
+            "image": "flight5.jpg"
+        },
+        {
+            "name": "Cyan Skies Express",
+            "price": 5200,
+            "image": "flight3.jpg"
+        },
+        {
+            "name": "Azure Air",
+            "price": 4100,
+            "image": "flight4.jpg"
+        },
+        {
+            "name": "Air Bus",
+            "price": 6000,
+            "image": "flight2.jpg"
+        }
+    ],
+    "buses": [
+        {
+            "name": "Ocean Route Express",
+            "price": 1200,
+            "image": "bus1.jpg"
+        },
+        {
+            "name": "Teal Transit",
+            "price": 1360,
+            "image": "bus2.jpg"
+        },
+        {
+            "name": "Aqua Lines",
+            "price": 1500,
+            "image": "bus3.jpg"
+        },
+        {
+            "name": "Marine travels",
+            "price": 1100,
+            "image": "bus4.jpg"
+        },
+        {
+            "name": "Deep Blue Travels",
+            "price": 1150,
+            "image": "bus5.jpg"
+        },
+        {
+            "name": "Deep Blue Travels",
+            "price": 1270,
+            "image": "bus6.jpg"
+        }
+    ],
+    "hotels": [
+        {
+            "name": "The Azure Resort",
+            "price": 4311,
+            "image": "hotel5.jpg"
+        },
+        {
+            "name": "Cyan Bay Hotel",
+            "price": 5800,
+            "image": "hotel3.jpg"
+        },
+        {
+            "name": "Teal Waters Inn",
+            "price": 5177,
+            "image": "hotel6.jpg"
+        },
+        {
+            "name": "Cobalt Suites",
+            "price": 7200,
+            "image": "hotel2.jpg"
+        },
+        {
+            "name": "Ocean Breeze Hotel",
+            "price": 3500,
+            "image": "hotel4.jpg"
+        },
+        {
+            "name": "Sapphire Stays",
+            "price": 4800,
+            "image": "hotel7.jpg"
+        },
+        {
+            "name": "Aqua Horizon Resort",
+            "price": 6500,
+            "image": "hotel8.jpg"
+        },
+        {
+            "name": "Marina Grand",
+            "price": 8900,
+            "image": "hotel1.jpg"
+        }
+    ]
+}

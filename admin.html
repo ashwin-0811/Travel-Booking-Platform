@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard - Travel With Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background: #f4f7f6; background-image: none;">
+    <div class="admin-layout">
+        <div class="sidebar">
+            <h2>Admin Panel</h2>
+            <ul>
+                <li><a href="#">Dashboard Home</a></li>
+                <li><a href="#">User Management</a></li>
+                <li><a href="#">Platform Analytics</a></li>
+                <li style="margin-top: 50px;"><a href="#" onclick="localStorage.removeItem('currentUser'); window.location.href='index.html';" style="color:#ffb3c1;">Logout</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <h1 style="color: var(--primary-blue); margin-bottom: 30px;">System Overview</h1>
+            <div class="grid-container">
+                <div class="card" style="border-left: 5px solid var(--secondary-teal);">
+                    <h3 style="color: #666;">Total Registered Users</h3>
+                    <h2 id="total-users" style="color: var(--primary-blue); font-size: 40px; margin-top: 10px;">0</h2>
+                </div>
+                <div class="card" style="border-left: 5px solid var(--accent-cyan);">
+                    <h3 style="color: #666;">Total Bookings Processed</h3>
+                    <h2 id="total-bookings" style="color: var(--primary-blue); font-size: 40px; margin-top: 10px;">0</h2>
+                </div>
+            </div>
+            <div class="card" style="margin-top: 40px;">
+                <h3>Recent Activity</h3>
+                <p style="margin-top: 10px; color: #777;">Platform is running smoothly. Local Storage database connected.</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>window.onload = loadAdmin;</script>
+</body>
+</html>
